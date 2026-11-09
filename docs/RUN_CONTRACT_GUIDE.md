@@ -2,7 +2,7 @@
 
 ## Purpose
 
-`darwin-cicd` includes a reusable run-contract utility that tracks:
+`infra-darwin-cicd` includes a reusable run-contract utility that tracks:
 
 - Which **inputs** are expected and whether they exist before processing
 - Which **outputs** are expected (from `job_id` + spec)

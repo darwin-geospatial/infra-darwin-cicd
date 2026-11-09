@@ -1,4 +1,4 @@
-# darwin-cicd
+# infra-darwin-cicd
 
 Shared CI/CD scripts for CloudBuild VM pipelines. Consumed as a **git submodule** at `cicd/` — your project pins a specific version; CloudBuild clones it automatically via `init-submodules`.
 
@@ -13,14 +13,14 @@ Shared CI/CD scripts for CloudBuild VM pipelines. Consumed as a **git submodule*
 
 Every team at Darwin builds data pipelines. Without a shared framework, each team reinvents the same infrastructure: Docker builds, VM orchestration, GCS uploads, output verification, self-deleting VMs. The result is N slightly-different implementations that all do the same thing, each with its own bugs.
 
-`darwin-cicd` solves this by splitting every pipeline into two halves:
+`infra-darwin-cicd` solves this by splitting every pipeline into two halves:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                      THE BIG IDEA                               │
 │                                                                 │
-│   Your project = WHAT to process (application logic)            │
-│   darwin-cicd  = HOW to run it  (infrastructure)                │
+│   Your project      = WHAT to process (application logic)       │
+│   infra-darwin-cicd = HOW to run it  (infrastructure)           │
 │                                                                 │
 │   ┌─────────────────────┐    ┌─────────────────────┐            │
 │   │   YOUR PROJECT      │    │   cicd/ SUBMODULE    │            │

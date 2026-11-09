@@ -1,4 +1,4 @@
-# darwin-cicd
+# infra-darwin-cicd
 
 ## START HERE -- RULES BEFORE WORK STARTS
 
